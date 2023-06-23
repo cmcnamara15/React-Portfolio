@@ -5,7 +5,7 @@ import Navigation from "./navigation"
 export default function header(){
     return(
         <div>
-            <h2>Title</h2>
+            <h4>Chris McNamara's Portfolio</h4>
             <Navigation/>
         </div>
     );
