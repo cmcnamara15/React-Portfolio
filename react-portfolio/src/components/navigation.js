@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { Tab, Tabs } from '@mui/material';
 import { useState } from "react";
 

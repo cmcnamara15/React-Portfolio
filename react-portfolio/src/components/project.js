@@ -1,9 +1,19 @@
-import react from "react";
+import React from "react";
+
 
 export default function Project() {
-    return (
-        <div>
-            <h1>Project</h1>
-        </div>
-    )
+    const [currentPage, setCurrentPage] = useState("Portfolio");
+
+    const renderPage =() => {
+        if (currentPage === "Portfolio"){
+            return <Portfolio />;
+        }
+        if (currentPage === "AboutMe"){
+            return <AboutMe />;
+        }
+        if (currentPage === "ContactMe"){
+            return <ContactMe />;
+        }
+        return <Resume />;
+    }
 }
