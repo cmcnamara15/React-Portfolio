@@ -1,12 +1,12 @@
 import React from "react";
-import Navigation from "./navigation"
+import Navigation from "./navbar"
 
 
 export default function header(){
     return(
         <div>
             <h4>Chris McNamara's Portfolio</h4>
-            <Navigation/>
+            <Navigation />
         </div>
     );
 }

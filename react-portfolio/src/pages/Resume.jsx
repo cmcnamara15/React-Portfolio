@@ -1,7 +1,8 @@
 import React from "react";
 
-return (
+export default function Resume() {
     <div>
         <h1>Resume</h1>
     </div>
-)
+
+}
