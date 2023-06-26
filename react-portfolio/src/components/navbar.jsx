@@ -7,7 +7,7 @@ export default function NavBar() {
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
     return (
-    <AppBar position="static">
+    <AppBar position="static" color="">
         <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Chris McNamara's Portfolio

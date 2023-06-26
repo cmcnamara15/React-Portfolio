@@ -1,8 +1,20 @@
-import React from "react";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import * as React from 'react';
 
-export default function AboutMe() {
+export default function MediaCard() {
     return (
         <div>
+        <CardMedia
+        component="img"
+        style={{height: 'auto', width: '50%', margin:'0 auto'}}
+        image="https://i.ibb.co/BydCjGM/Screenshot-2023-06-26-at-3-33-31-PM.png"
+        alt="About Me"
+        />
             <h1>About Me</h1>
             <p>
                 I am a full stack web developer with a background in the trades.

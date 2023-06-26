@@ -6,6 +6,7 @@ import ContactMe from "./pages/ContactMe";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import NavBar from "./components/navbar";
+import Layout from "./components/layout";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <NavBar />
+        <Layout>
         <Routes>
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/" element={<Portfolio />} />
@@ -22,6 +24,7 @@ function App() {
           <Route path="/ContactMe" element={<ContactMe />} />
           <Route path="/Resume" element={<Resume />} />
         </Routes>
+        </Layout>
       </Router>
     </ThemeProvider>
   );
