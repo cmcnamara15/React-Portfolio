@@ -8,6 +8,7 @@ import Resume from "./pages/Resume";
 import NavBar from "./components/navbar";
 import Layout from "./components/layout";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Photos from "./pages/Photos";
 
 function App() {
   const theme = createTheme();
@@ -17,13 +18,14 @@ function App() {
       <Router>
         <NavBar />
         <Layout>
-        <Routes>
-          <Route path="/AboutMe" element={<AboutMe />} />
-          <Route path="/" element={<Portfolio />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
-          <Route path="/Resume" element={<Resume />} />
-          <Route path="/ContactMe" element={<ContactMe />} />
-        </Routes>
+          <Routes>
+            <Route path="/AboutMe" element={<AboutMe />} />
+            <Route path="/" element={<Portfolio />} />
+            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/Resume" element={<Resume />} />
+            <Route path="/ContactMe" element={<ContactMe />} />
+            <Route path="/Photos" element={<Photos />} />
+          </Routes>
         </Layout>
       </Router>
     </ThemeProvider>
