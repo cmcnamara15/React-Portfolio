@@ -1,12 +1,13 @@
 import React from "react";
 import Project from "../components/Project";
+import dudeImage from '../assets/images/dude-wheres-my-show.png';
 
 export default function Portfolio() {
     const projects = [
         {
             name: "Dude where's my show?",
             description: "A web app that allows users to search for their favorite TV shows and find out where they can stream them.",
-            image: "./assets/images/dude-wheres-my-show.png",
+            image: dudeImage,
             github: "https://eeast.github.io/Dude-Wheres-My-Show/"
         }
     ]

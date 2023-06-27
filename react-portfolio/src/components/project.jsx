@@ -12,7 +12,7 @@ export default function project({ project }) {
             <CardActionArea href={project.github} target="_blank" rel="noopener">
                 <CardMedia
                     component="img"
-                    height="140"
+                    height="225"
                     image={project.image}
                     alt={project.name}
                 />
