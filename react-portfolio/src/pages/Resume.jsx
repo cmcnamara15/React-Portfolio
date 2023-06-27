@@ -1,6 +1,6 @@
 import React from "react";
 import resumeImageOne from "../assets/images/resumeOne.png";
-// import resumeImageTwo from "../assets/images/resumeTwo.png";
+import resumeImageTwo from "../assets/images/resumeTwo.png";
 // import resumePdf from "../assets/resume.pdf";
 
 export default function Resume() {
@@ -8,6 +8,8 @@ export default function Resume() {
 <div>
     <h1>My Resume</h1>
     <img src={resumeImageOne} alt="Resume" style={{ width: '50%', height: 'auto' }} />
+
+    <img src={resumeImageTwo} alt="Resume" style={{ width: '50%', height: 'auto' }} />
     {/* <a href={resumePdf} download="resume.pdf">Download PDF</a> */}
 </div>
     )
