@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function project({ project }) {
     return (
-        <Card style ={{ width: '45%', margin: '3%' }}>
+        <Card style={{ margin: '2em', width: '350px' }}>
             <CardActionArea href={project.github} target="_blank" rel="noopener">
                 <CardMedia
                     component="img"

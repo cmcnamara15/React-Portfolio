@@ -1,6 +1,7 @@
 import CardMedia from '@mui/material/CardMedia';
 import * as React from 'react';
 
+
 export default function MediaCard() {
     return (
         <div>
