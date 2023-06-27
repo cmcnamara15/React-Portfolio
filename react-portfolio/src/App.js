@@ -5,11 +5,11 @@ import AboutMe from "./pages/AboutMe";
 import ContactMe from "./pages/ContactMe";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
-import NavBar from "./components/navbar";
-import Layout from "./components/layout";
+import NavBar from "./components/Navbar";
+import Layout from "./components/Layout";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Photos from "./pages/Photos";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
   const theme = createTheme();

@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "./navbar"
+import Navigation from "./Navbar"
 
 
 export default function header(){
