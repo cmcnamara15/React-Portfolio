@@ -9,11 +9,13 @@ import NavBar from "./components/navbar";
 import Layout from "./components/layout";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Photos from "./pages/Photos";
+import Footer from "./components/Footer";
 
 function App() {
   const theme = createTheme();
 
   return (
+    <div>
     <ThemeProvider theme={theme}>
       <Router>
         <NavBar />
@@ -29,6 +31,8 @@ function App() {
         </Layout>
       </Router>
     </ThemeProvider>
+    <Footer />
+    </div>
   );
 }
 
