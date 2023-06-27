@@ -9,7 +9,7 @@ import NavBar from "./components/navbar";
 import Layout from "./components/layout";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Photos from "./pages/Photos";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 
 function App() {
   const theme = createTheme();

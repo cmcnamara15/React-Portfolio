@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-export default function footer() {
+export default function Footer() {
     return (
         <Box sx={{ '& > :not(style)': { m: 1 }, display: 'flex', justifyContent: 'center', alignItems: 'center', height: 60, backgroundColor: '#f8f8f8' }}>
         <Button href="https://github.com/cmcnamara15" target="_blank" rel="noopener" startIcon={<GitHubIcon />}>
