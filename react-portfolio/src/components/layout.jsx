@@ -5,29 +5,29 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
 }));
 
 export default function FixedContainer({children}) {
-  return (
+    return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+        <Grid container spacing={2}>
         <Grid item xs={12} md={12}>
-          <Item>
+            <Item>
             {children}
-          </Item>
+            </Item>
         </Grid>
         {/* <Grid item xs={12} md={4}>
-          <Item>
+            <Item>
             Sidebar Content Here
-          </Item>
+            </Item>
         </Grid> */}
-      </Grid>
+        </Grid>
     </Box>
-  );
+    );
 }
 

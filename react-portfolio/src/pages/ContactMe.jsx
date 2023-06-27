@@ -6,6 +6,7 @@ export default function ContactMe() {
         <div>
             <h1>Contact Me</h1>
             <p>(516) 236-7613</p>
+            <p>cmcnamara1991@icloud.com</p>
         </div>
     )
 }
