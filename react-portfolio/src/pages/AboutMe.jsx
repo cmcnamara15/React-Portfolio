@@ -17,12 +17,6 @@ export default function MediaCard() {
         <div style={{width: '70%', margin: '0 auto'}}>
             <h1>About Me</h1>
             <p>
-                {/* I am a full stack web developer with a background in the trades.
-                I have a passion for learning and problem solving. I am a team player 
-                and I am always looking for ways to improve myself and the team.
-                I am currently enrolled in the University of Teaxs at Austin's full stack web development bootcamp.
-                I am looking forward to applying my skills to a new career in web development.
-                These skills include HTML, CSS, JavaScript, Node.js, Express.js, React.js, MySql, MongoDB, and more. */}
                 Driven full-stack JavaScript bootcamp student with a diverse background ranging from home builder to 
                 program manager in a behavioral health organization. My work history, whether assisting with coordinating 
                 operations at yacht clubs, maintaining a fast-paced bakery, or teaching meditation, has imbued me with a 
