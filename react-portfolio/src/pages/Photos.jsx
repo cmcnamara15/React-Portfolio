@@ -1,6 +1,8 @@
-import react from "react";
+import React, { useState } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; // This imports the lightbox CSS.
 import horse from "../assets/photography/horse.JPG";
 import galicia from "../assets/photography/galicia.JPG";
 import grandmaFlower from "../assets/photography/grandmaFlower.JPG";
@@ -12,8 +14,7 @@ import cross from "../assets/photography/cross.JPG";
 import stump from "../assets/photography/stumps.JPG";
 import rearView from "../assets/photography/rearView.JPG";
 import lights from "../assets/photography/lights.JPG";
-import end from "../assets/photography/endOfworld.JPG"
-import donkey from "../assets/photography/donkeyTime.JPG"
+import van from "../assets/photography/van.JPG"
 
 const itemData = [
     {
@@ -83,36 +84,52 @@ const itemData = [
         rows: 2,
     },
     {
-        img: end,
-        title: 'Image 12',
-        cols: 1,
-        rows: 1,
-    },
-    {
-        img: donkey,
-        title: 'Image 13',
+        img: van,
+        title: 'Image 14',
         cols: 2,
         rows: 1,
     },
 ]
 
+
 export default function Photos() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [photoIndex, setPhotoIndex] = useState(0);
+
     return (
-        <ImageList
-            sx={{ width: 500, height: 450 }}
-            variant="quilted"
-            cols={4}
-            rowHeight={121}
-        >
-            {itemData.map((item) => (
-                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                    <img
-                        src={item.img}
-                        alt={item.title}
-                        loading="lazy"
-                    />
-                </ImageListItem>
-            ))}
-        </ImageList>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <ImageList
+                sx={{ maxWidth: '100%', height: 'auto' }}
+                cols={3}
+                rowHeight={190}
+            >
+                {itemData.map((item, index) => (
+                    <ImageListItem key={item.img} onClick={() => {setPhotoIndex(index); setIsOpen(true)}}>
+                        <img
+                            src={item.img}
+                            alt={item.title}
+                            loading="lazy"
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
+            {isOpen && (
+                <Lightbox
+                    mainSrc={itemData[photoIndex].img}
+                    nextSrc={itemData[(photoIndex + 1) % itemData.length].img}
+                    prevSrc={itemData[(photoIndex + itemData.length - 1) % itemData.length].img}
+                    onCloseRequest={() => setIsOpen(false)}
+                    onMovePrevRequest={() =>
+                setPhotoIndex((photoIndex + itemData.length - 1) % itemData.length)
+                }
+                onMoveNextRequest={() =>
+                    setPhotoIndex((photoIndex + 1) % itemData.length)
+                }
+                />
+            )}
+        </div>
     );
 }
+
+
+
