@@ -5,13 +5,16 @@ import * as React from 'react';
 export default function MediaCard() {
     return (
         <div>
-        <CardMedia
-        component="img"
-        style={{height: 'auto', width: '50%', margin:'0 auto'}}
-        image="https://i.ibb.co/BydCjGM/Screenshot-2023-06-26-at-3-33-31-PM.png"
-        alt="About Me"
-        />
-            <div style={{width: '70%', margin: '0 auto'}}>
+            <div className="image-container">
+                <CardMedia
+                    component="img"
+                    className="color-img"
+                    style={{height: 'auto', width: '50%', margin:'0 auto'}}
+                    image="https://i.ibb.co/BydCjGM/Screenshot-2023-06-26-at-3-33-31-PM.png"
+                    alt="About Me"
+                />
+            </div>
+        <div style={{width: '70%', margin: '0 auto'}}>
             <h1>About Me</h1>
             <p>
                 {/* I am a full stack web developer with a background in the trades.

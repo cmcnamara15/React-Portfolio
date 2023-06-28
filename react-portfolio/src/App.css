@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.color-img {
+  transition: 0.3s;
+}
+
+.color-img:hover {
+  filter: grayscale(100%) drop-shadow(4px 4px 6px gray)
+}
