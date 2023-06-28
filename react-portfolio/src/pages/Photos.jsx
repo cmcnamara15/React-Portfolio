@@ -15,7 +15,7 @@ export default function Photos() {
             <ImageList
                 sx={{ maxWidth: '100%', height: 'auto' }}
                 cols={3}
-                rowHeight={164}
+                rowHeight={190}
             >
                 {photoData.map((item, index) => ( // Use photoData here instead of itemData
                     <ImageListItem key={item.img} onClick={() => {setPhotoIndex(index); setIsOpen(true)}}>
