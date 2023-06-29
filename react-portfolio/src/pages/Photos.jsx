@@ -10,19 +10,19 @@ export default function Photos() {
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 
-    // Here we are returning the JSX to render for this component.
-    // It contains an ImageList component which maps over the itemData array to generate an ImageListItem 
-    // for each image. When an ImageListItem is clicked, it updates the photoIndex state and opens the lightbox.
-    // If the lightbox is open (isOpen is true), a Lightbox component is rendered which displays the current image 
-    // and provides buttons to navigate to the next and previous images.
-
-
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            height: '80vh',
+            padding: '2em',
+            overflow: 'auto'
+            }}>
             <ImageList
                 sx={{ maxWidth: '100%', height: 'auto' }}
                 cols={3}
-                rowHeight={190}
+                rowHeight={400}
             >
                 {photoData.map((item, index) => ( // Use photoData here instead of itemData
                     <ImageListItem key={item.img} onClick={() => {setPhotoIndex(index); setIsOpen(true)}}>
@@ -54,3 +54,8 @@ export default function Photos() {
 
 
 
+    // Here we are returning the JSX to render for this component.
+    // It contains an ImageList component which maps over the itemData array to generate an ImageListItem 
+    // for each image. When an ImageListItem is clicked, it updates the photoIndex state and opens the lightbox.
+    // If the lightbox is open (isOpen is true), a Lightbox component is rendered which displays the current image 
+    // and provides buttons to navigate to the next and previous images.
