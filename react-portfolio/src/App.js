@@ -21,8 +21,8 @@ function App() {
         <NavBar />
         <Layout>
           <Routes>
+          <Route path="/" element={<AboutMe />} />
             <Route path="/AboutMe" element={<AboutMe />} />
-            <Route path="/" element={<Portfolio />} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/Resume" element={<Resume />} />
             <Route path="/ContactMe" element={<ContactMe />} />
