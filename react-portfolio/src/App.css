@@ -42,5 +42,5 @@
 }
 
 .color-img:hover {
-  filter: grayscale(100%) drop-shadow(4px 4px 6px gray)
+  filter: grayscale(1) contrast(1.5) brightness(1);
 }
