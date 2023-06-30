@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This imports the lightbox CSS.
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css'; // This imports the lightbox CSS.
 import photoData from './photoData';
 
 
