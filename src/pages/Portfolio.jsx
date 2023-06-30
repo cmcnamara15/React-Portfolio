@@ -7,6 +7,7 @@ import weatherImage from '../assets/images/weatherDashboard.png';
 import codeQuizImage from '../assets/images/codeQuiz.png';
 import techBlogImage from '../assets/images/techBlog.png';
 
+
 export default function Portfolio() {
     const projects = [
         {
