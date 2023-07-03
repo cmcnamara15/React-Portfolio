@@ -12,7 +12,7 @@ export default function NavBar() {
         <List>
             {['About Me', 'Portfolio', 'Resume', 'Photos', 'Contact Me'].map((text, index) => (
                 <ListItem button key={text} component={Link} to={`/${text.replace(' ', '')}`} 
-                onClick={() => setDrawerOpen(false)}><ListItem primary={text} />
+                onClick={() => setDrawerOpen(false)}><ListItemText primary={text}primaryTypographyProps={{style: { color: 'black' } }}/>
                 </ListItem>
             ))}
         </List>
