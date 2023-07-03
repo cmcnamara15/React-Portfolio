@@ -23,7 +23,7 @@ Welcome to my portfolio! This project was built to showcase my work as an aspiri
 - [Screenshots](#screenshots)
 
 ## Deployed URL
-https://chris-mcnamaras-portfolio-4766d299e787.herokuapp.com/
+www.chrismacsportfolio.com
 
 ## REPO URL
 https://github.com/cmcnamara15/React-Portfolio<br />
