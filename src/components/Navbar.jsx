@@ -26,10 +26,9 @@ export default function NavBar() {
         </Typography>
 
         {isMobile ? (
-          // You can replace this with a Drawer or Menu component for mobile view
-            <Typography variant="body1" color="inherit">
-            Mobile Nav
-            </Typography>
+            <IconButton edge="end" color="inherit" aria-label="menu" onClick={() => setDrawerOpen(!drawerOpen)}>
+                <MenuIcon />
+            </IconButton>
         ) : (
             <div>
                 <Button color="inherit" component={Link} to="/AboutMe">About Me</Button>
@@ -40,6 +39,9 @@ export default function NavBar() {
             </div>
         )}
         </Toolbar>
+        <Drawer anchor={'right'} open={drawerOpen} onClose={() => setDrawerOpen(false)}>
+            {list}
+        </Drawer>
     </AppBar>
     );
 }
