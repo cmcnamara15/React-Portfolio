@@ -1,5 +1,6 @@
 # Chris McNamara's Portfolio
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Screenshot of home page](/src/assets/screenshots/Screenshot.png)
 
 ## Description
 ![React](https://img.shields.io/badge/react%20os-0088CC?style=for-the-badge&logo=reactos&logoColor=white)
