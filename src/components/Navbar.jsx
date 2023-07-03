@@ -6,6 +6,17 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+    const [drawerOpen, setDrawerOpen] = React.useState(false);
+
+    const list = ( 
+        <List>
+            {['About Me', 'Portfolio', 'Resume', 'Photos', 'Contact Me'].map((text, index) => (
+                <ListItem button key={text} component={Link} to={`/${text.replace(' ', '')}`} 
+                onClick={() => setDrawerOpen(false)}><ListItem primary={text} />
+                </ListItem>
+            ))}
+        </List>
+    )
 
     return (
     <AppBar position="static" color="">
