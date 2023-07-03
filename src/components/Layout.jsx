@@ -21,11 +21,6 @@ export default function FixedContainer({children}) {
             {children}
             </Item>
         </Grid>
-        {/* <Grid item xs={12} md={4}>
-            <Item>
-            Sidebar Content Here
-            </Item>
-        </Grid> */}
         </Grid>
     </Box>
     );
