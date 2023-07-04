@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from "@mui/icons-material/Email";
+
 
 export default function Footer() {
     return (
@@ -13,6 +15,7 @@ export default function Footer() {
         <Button href="https://www.linkedin.com/in/chris-mcnamara1991/" target="_blank" rel="noopener" startIcon={<LinkedInIcon />}>
             LinkedIn
         </Button>
+        
         </Box>
     )
 }
