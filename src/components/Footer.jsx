@@ -15,7 +15,9 @@ export default function Footer() {
         <Button href="https://www.linkedin.com/in/chris-mcnamara1991/" target="_blank" rel="noopener" startIcon={<LinkedInIcon />}>
             LinkedIn
         </Button>
-        
+        <Button href="mailto:cmcnamara1991@icloud.com" target="_blank" rel="noopener" startIcon={<EmailIcon />}>
+            Email
+        </Button>
         </Box>
     )
 }
