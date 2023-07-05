@@ -54,7 +54,7 @@ export default function Portfolio() {
     return (
         <div>
             <h1>Portfolio</h1>
-            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: 'center' }}>
+            <div className="color-img" style={{ display: "flex", flexWrap: "wrap", justifyContent: 'center' }}>
                 {projects.map((project) => (
                     <Project key={project.name} project={project} />
                 ))}
