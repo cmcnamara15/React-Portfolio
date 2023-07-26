@@ -12,16 +12,16 @@ import schedaddy from '../assets/images/schedaddy.png';
 export default function Portfolio() {
     const projects = [
         {
-            name: "Schedaddy",
-            description: "Interactive MERN stack single-page application.",
-            image: schedaddy,
-            github: "https://github.com/cmcnamara15/Schedaddy",
-        },
-        {
             name: "Dude where's my show?",
             description: "A web app that allows users to search for their favorite TV shows and find out where they can stream them.",
             image: dudeImage,
             github: "https://eeast.github.io/Dude-Wheres-My-Show/"
+        },
+        {
+            name: "Schedaddy",
+            description: "Interactive MERN stack single-page application.",
+            image: schedaddy,
+            github: "https://github.com/cmcnamara15/Schedaddy",
         },
         {
             name: "Fusion Fables",
