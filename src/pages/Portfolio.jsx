@@ -6,10 +6,17 @@ import writeChoiceImage from '../assets/images/writeChoice.png';
 import weatherImage from '../assets/images/weatherDashboard.png';
 import codeQuizImage from '../assets/images/codeQuiz.png';
 import techBlogImage from '../assets/images/techBlog.png';
+import schedaddy from '../assets/images/schedaddy.png';
 
 
 export default function Portfolio() {
     const projects = [
+        {
+            name: "Schedaddy",
+            description: "Interactive MERN stack single-page application.",
+            image: schedaddy,
+            github: "https://github.com/cmcnamara15/Schedaddy",
+        },
         {
             name: "Dude where's my show?",
             description: "A web app that allows users to search for their favorite TV shows and find out where they can stream them.",
@@ -44,12 +51,12 @@ export default function Portfolio() {
             github: "https://github.com/cmcnamara15/Coding_Quiz",
             deployed: "https://cmcnamara15.github.io/Coding_Quiz/",
         },
-        {
-            name: "Tech-Blog",
-            description: "Browser-based text editor that allows users to create, edit, and save documents.",
-            image: techBlogImage,
-            github: "https://github.com/cmcnamara15/Tech-Blog",
-        },
+        // {
+        //     name: "Tech-Blog",
+        //     description: "Browser-based text editor that allows users to create, edit, and save documents.",
+        //     image: techBlogImage,
+        //     github: "https://github.com/cmcnamara15/Tech-Blog",
+        // },
     ]
     return (
         <div>
