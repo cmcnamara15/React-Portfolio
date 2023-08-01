@@ -29,14 +29,11 @@ import Button from '@mui/material/Button';
 export default function project({ project }) {
     return (
         <Card style={{ margin: '2em', width: '350px' }}>
-            <CardActionArea target="_blank" rel="noopener">
-                <div style={{ 
+            <CardActionArea target="_blank" rel="noopener" >
+                <div className="color-img" style={{ 
                     backgroundImage: `url(${project.image})`, 
                     height: "225px", 
                     backgroundSize: 'cover',
-                    '&:hover': {
-                        filter: 'grayscale(100%)',
-                    },
                 }}>
                 </div>
                 <CardContent>
