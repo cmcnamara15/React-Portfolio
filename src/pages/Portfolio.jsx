@@ -15,13 +15,15 @@ export default function Portfolio() {
             name: "Dude where's my show?",
             description: "A web app that allows users to search for their favorite TV shows and find out where they can stream them.",
             image: dudeImage,
-            github: "https://eeast.github.io/Dude-Wheres-My-Show/"
+            github: "https://eeast.github.io/Dude-Wheres-My-Show/",
+            deployed: "https://eeast.github.io/Dude-Wheres-My-Show/",
         },
         {
             name: "Schedaddy",
-            description: "Interactive MERN stack single-page application.",
+            description: "Interactive MERN stack single-page CRM application.",
             image: schedaddy,
             github: "https://github.com/cmcnamara15/Schedaddy",
+            deployed: "https://schedaddy-0dffdc6ab2cd.herokuapp.com/",
         },
         {
             name: "Fusion Fables",
@@ -30,33 +32,34 @@ export default function Portfolio() {
             github: "https://github.com/HunterHester/fusion-fables",
             deployed: "https://fusion-fables.herokuapp.com/"
         },
-        {
-            name: "WriteChoice",
-            description: "Browser-based text editor that allows users to create, edit, and save documents.",
-            image: writeChoiceImage,
-            github: "https://github.com/cmcnamara15/WriteChoice",
-            deployed: "https://writechoice.herokuapp.com/"
-        },
+        // {
+        //     name: "WriteChoice",
+        //     description: "Browser-based text editor that allows users to create, edit, and save documents.",
+        //     image: writeChoiceImage,
+        //     github: "https://github.com/cmcnamara15/WriteChoice",
+        //     deployed: "https://writechoice.herokuapp.com/"
+        // },
         {
             name: "Weather Dashboard",
-            description: "Browser-based text editor that allows users to create, edit, and save documents.",
+            description: "Utilized third party API's to develop a interactive weather forecast site.",
             image: weatherImage,
             github: "https://cmcnamara15.github.io/Weather_Dashboard/",
-            deployed: "https://writechoice.herokuapp.com/"
+            deployed: "https://cmcnamara15.github.io/Weather_Dashboard/",
         },
         {
             name: "Coding Quiz",
-            description: "Browser-based text editor that allows users to create, edit, and save documents.",
+            description: "Vanilla javascript and jQuery to build a multiple choice quiz challenge game",
             image: codeQuizImage,
             github: "https://github.com/cmcnamara15/Coding_Quiz",
             deployed: "https://cmcnamara15.github.io/Coding_Quiz/",
         },
-        // {
-        //     name: "Tech-Blog",
-        //     description: "Browser-based text editor that allows users to create, edit, and save documents.",
-        //     image: techBlogImage,
-        //     github: "https://github.com/cmcnamara15/Tech-Blog",
-        // },
+        {
+            name: "Tech-Blog",
+            description: "Browser-based text editor that allows users to create, edit, and save documents.",
+            image: techBlogImage,
+            github: "https://github.com/cmcnamara15/Tech-Blog",
+            deployed: "https://chris-macs-techblog-290512fcf235.herokuapp.com/",
+        },
     ]
     return (
         <div>
