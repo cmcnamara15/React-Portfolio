@@ -17,6 +17,7 @@ export default function Portfolio() {
             image: dudeImage,
             github: "https://eeast.github.io/Dude-Wheres-My-Show/",
             deployed: "https://eeast.github.io/Dude-Wheres-My-Show/",
+            technologies: "Javascript, Materialize, HTML, CSS, Third Party API's",
         },
         {
             name: "Schedaddy",
@@ -24,13 +25,15 @@ export default function Portfolio() {
             image: schedaddy,
             github: "https://github.com/cmcnamara15/Schedaddy",
             deployed: "https://schedaddy-0dffdc6ab2cd.herokuapp.com/",
+            technologies: "React, GraphQL, JSON Web Tokens, MongoDB, Bootstrap",
         },
         {
             name: "Fusion Fables",
             description: "Creative writing app that allows users to create stories and post them to a public feed, the end of each story is left open for other users to continue.",
             image: fusionImage,
             github: "https://github.com/HunterHester/fusion-fables",
-            deployed: "https://fusion-fables.herokuapp.com/"
+            deployed: "https://fusion-fables.herokuapp.com/",
+            technologies: "Javascript, Sequelize, MYSQL, Handlebars, Express.js",
         },
         // {
         //     name: "WriteChoice",
@@ -43,8 +46,9 @@ export default function Portfolio() {
             name: "Weather Dashboard",
             description: "Utilized third party API's to develop a interactive weather forecast site.",
             image: weatherImage,
-            github: "https://cmcnamara15.github.io/Weather_Dashboard/",
+            github: "https://github.com/cmcnamara15/Weather_Dashboard",
             deployed: "https://cmcnamara15.github.io/Weather_Dashboard/",
+            technologies: "HTML, CSS, Javascript, jQuery, Open Weather API"
         },
         {
             name: "Coding Quiz",
@@ -52,6 +56,7 @@ export default function Portfolio() {
             image: codeQuizImage,
             github: "https://github.com/cmcnamara15/Coding_Quiz",
             deployed: "https://cmcnamara15.github.io/Coding_Quiz/",
+            technologies: "JavaScript, HTML, CSS"
         },
         {
             name: "Tech-Blog",
@@ -59,6 +64,7 @@ export default function Portfolio() {
             image: techBlogImage,
             github: "https://github.com/cmcnamara15/Tech-Blog",
             deployed: "https://chris-macs-techblog-290512fcf235.herokuapp.com/",
+            technologies: "Javascript, Sequelize, MYSQL, Handlebars, Express.js",
         },
     ]
     return (

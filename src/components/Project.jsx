@@ -43,6 +43,12 @@ export default function project({ project }) {
                     <Typography variant="body2" color="text.secondary">
                         {project.description}
                     </Typography>
+                    {/* <Typography gutterBottom variant="h6" component="div">
+                        Technologies
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary" fontSize="15px">
+                        {project.technologies}
+                    </Typography> */}
                     <Button variant="outlined" style={{ marginRight: '1em', marginTop: '1em' }} href={project.github} target="_blank" rel="noopener">
                         Github
                     </Button>
