@@ -75,6 +75,29 @@ export default function Portfolio() {
                     <Project key={project.name} project={project} />
                 ))}
             </div>
+            <h2> Technologies:</h2>
+                    <ul style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(3, 1fr)', 
+                        listStyleType: 'none', 
+                        padding: 0, 
+                        columnGap: '1em',
+                        rowGap: '1em',
+                        marginTop: '1em'
+                    }}>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>GraphQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Bootstrap</li>
+                        <li>Material UI</li>
+                        <li>APIs</li>
+                    </ul>
         </div>
     )
 }
