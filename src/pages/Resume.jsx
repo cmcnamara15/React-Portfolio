@@ -1,6 +1,6 @@
 import React from "react";
-import resumeImageOne from "../assets/images/resumeOne.png";
-import resumeImageTwo from "../assets/images/resumeTwo.png";
+import resumeImageOne from "../assets/images/ResumeScreenShot1.png";
+import resumeImageTwo from "../assets/images/ResumeScreenShot2.png";
 // import resumePdf from "../assets/resume.pdf";
 
 export default function Resume() {
