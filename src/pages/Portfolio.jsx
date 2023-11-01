@@ -75,7 +75,7 @@ export default function Portfolio() {
                     <Project key={project.name} project={project} />
                 ))}
             </div>
-            <h2> Technologies:</h2>
+            {/* <h2> Technologies:</h2>
                     <ul style={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(3, 1fr)', 
@@ -97,7 +97,7 @@ export default function Portfolio() {
                         <li>Bootstrap</li>
                         <li>Material UI</li>
                         <li>APIs</li>
-                    </ul>
+                    </ul> */}
         </div>
     )
 }
